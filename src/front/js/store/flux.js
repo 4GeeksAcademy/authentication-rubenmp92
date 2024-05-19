@@ -54,7 +54,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			
 					if (response.ok) {
 					 
-						setStore({ signupSuccesful: "Successful registration! Now you can log in." });
+						setStore({ signupSuccesful: "Successful registration!" });
 						return true;
 					} else if (response.status === 400 && data.msg === "User already exists") {
 					 

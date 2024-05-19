@@ -14,7 +14,7 @@ export const Navbar = () => {
 	}
 
 	return (
-		<nav className="navbar navbar-light bg-light" style={{background:"white"}}>
+		<nav className="navbar navbar-light bg-light" style={{background:"linear-gradient(#C9D6FF, #E2E2E2)"}}>
 			<div className="container">
 				<div className="ml-auto">
 					<Link to="/">
@@ -23,7 +23,7 @@ export const Navbar = () => {
 				</div>
 				<div className="ml-auto">
 					<Link to="/signup">
-						<button className="btn btn-outline-info" style={{marginRight:"15px"}}>Signup</button>
+						<button className="btn btn-outline-secondary" style={{marginRight:"15px"}}>Signup</button>
 					</Link>
 			 
 					{store.authentication === false ? 
@@ -33,7 +33,7 @@ export const Navbar = () => {
 					:""}
 
 					<Link to="/private">
-						<button className="btn btn-outline-warning" style={{marginRight:"15px"}}>Private</button>
+						<button className="btn btn-outline-success" style={{marginRight:"15px"}}>Private</button>
 					</Link>
 
 					{store.authentication === true ? <button onClick={()=>submitlogout()} className="btn btn-danger">Logout</button>:""}

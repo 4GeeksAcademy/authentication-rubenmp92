@@ -12,7 +12,7 @@ export const Home = () => {
 	 
 
 	return (
-		<div className="text-center mt-5">
+		<div className="text-center mt-5" style={{background: "linear-gradient(#3CA55C, #B5AC49)"}}>
 			
 			<h1>Rigo says:</h1>
 			<p className="display-6">{store.authentication === true ? "You are already logged in, you can access the private area" : "You are not logged in, access your account or register"}</p>

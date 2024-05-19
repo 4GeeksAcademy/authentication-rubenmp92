@@ -15,7 +15,7 @@ const Signup = () => {
         try {
             const success = await actions.addUser(email, password);
             if (success) {
-                navigate("/");
+                navigate("/login");
       
             } else {
                 setErrorMessage("Error: User already exist");
